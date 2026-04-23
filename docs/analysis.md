@@ -28,9 +28,11 @@ The central entity of the subsystem is a live moment. It represents an active re
 
 The main processes of the subsystem are creating a moment, discovering active moments, sending a join request, reviewing it, accepting or rejecting it, joining the interaction, and closing the moment.
 
-The subsystem uses video as the main interaction format, which makes presence and real-time reactions more direct than in text-based communication. At the same time, the current analysis is limited to the basic mechanics of creating moments and joining them, without covering recommendation logic, ranking, reflection building, or extended profile representation.
+The subsystem uses video as the main interaction format, which makes presence and real-time reactions more direct than in text-based communication. At the same time, a live moment in Mirror is not intended to be treated as a generic video session. The form of opening a moment, as well as the reason or context behind it, may later become an important part of the platform’s architecture, since this aspect influences how a moment differs from a simple call or broadcast.
 
-The current analysis also does not cover the broader architectural mechanisms through which the Mirror platform is expected to leave a person with a sense of inner lightness, freedom of thought, and emotional relief after meaningful interaction. Although this effect is outside the scope of the present subsystem, it remains one of the main long-term design goals of the platform and one of the main reasons for its future architectural development.
+At this stage, the analysis is limited to the basic mechanics of creating moments and joining them, without covering recommendation logic, ranking, reflection building, or extended profile representation. It also does not include the broader architectural mechanisms through which the Mirror platform is expected to leave a person with a sense of inner lightness, freedom of thought, and emotional relief after meaningful interaction.
+
+Although this effect is outside the scope of the present subsystem, it remains one of the main long-term design goals of the platform and one of the main reasons for its future architectural development.
 
 ## Existing approaches / analogs
 
@@ -54,9 +56,6 @@ A live moment is the central entity of the subsystem. It represents an active re
 
 ### JoinRequest
 A join request is created when one person wants to enter a moment opened by another person. It is reviewed by the host and may be accepted or rejected.
-
-### Participation
-Participation represents the state in which a person has been accepted into a moment and becomes involved in the interaction.
 
 ## Main interaction scenarios
 
@@ -83,5 +82,7 @@ After the interaction is completed, the host closes the moment, and it is no lon
 The analysis of the subject domain made it possible to define the purpose, boundaries, and basic structure of the subsystem for creating and joining moments within the Mirror platform. The main participants, entities, processes, and constraints of the subsystem were identified, and its difference from related digital interaction approaches was outlined.
 
 The obtained results form the basis for further object-oriented modeling of the subsystem, including the description of objects, classes, interactions, and state transitions, as well as for its later implementation in C++.
+
+It should also be noted that, in the broader Mirror concept, a moment is not understood as a generic video session, but as a more meaningful form of opening real-time presence to others. For this reason, the way a moment is initiated and framed may become an important direction of future architectural refinement.
 
 At the same time, this subsystem is considered only as one part of the broader Mirror concept. The larger goal of the platform is connected not only with technical interaction itself, but also with creating a space that can leave a person with a sense of inner lightness, freedom of thought, and emotional relief after meaningful contact with others.
