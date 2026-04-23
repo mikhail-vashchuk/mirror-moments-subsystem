@@ -47,3 +47,13 @@ This project is developed through a sequence of object-oriented academic stages:
 - `diagrams/` — UML and other visual schemes
 - `include/` — header files
 - `src/` — source files
+
+## Documentation order
+
+1. `analysis.md`
+2. `objects.md`
+3. `classes.md`
+4. `interactions.md`
+5. `states.md`
+6. `class_definitions.md`
+7. `class_implementation.md`
